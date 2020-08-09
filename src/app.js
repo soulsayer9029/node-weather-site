@@ -1,8 +1,8 @@
 const path=require('path')
 const express=require('express')
 const hbs=require('hbs')
-const geocode = require(path.join(__dirname,'../utils/geocode.js'))
-const forecast = require(path.join(__dirname,'../utils/forecast.js'))
+const geocode = require(path.join(__dirname,'../src/utils/geocode.js'))
+const forecast = require(path.join(__dirname,'../src/utils/forecast.js'))
 
 
 const app=express()
