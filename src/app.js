@@ -1,11 +1,12 @@
 const path=require('path')
 const express=require('express')
 const hbs=require('hbs')
-const geocode = require(path.join(__dirname,'../utils/geocode.js'))
-const forecast = require(path.join(__dirname,'../utils/forecast.js'))
+const geocode = require(path.join(__dirname,'../src/utils/geocode.js'))
+const forecast = require(path.join(__dirname,'../src/utils/forecast.js'))
 
 
 const app=express()
+const port=process.env.PORT ||3000
 //defining paths
 const publicPath=path.join(__dirname,'../public')
 const viewsPath=path.join(__dirname,'../templates/views')
@@ -90,6 +91,6 @@ app.get('*',(req,res)=>{
 
 })
 //starting the server
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('server has been started')
 })
