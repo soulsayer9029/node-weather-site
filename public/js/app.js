@@ -1,5 +1,3 @@
-console.log("client side js loaded")
-
 const input=document.querySelector('#searchInput')
 const button=document.querySelector('#search')
 const error=document.querySelector('#error')
